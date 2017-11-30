@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('/greeting', (req, res) => {
+app.get('/', (req, res) => {
   res.send({ hi: 'there' });
 });
 
 const PORT = process.env.PORT || 8080;
-app.listen(8080);
+app.listen(PORT);
 
 //localhost:8080
