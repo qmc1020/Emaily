@@ -12,7 +12,7 @@ class Mailer extends helper.Mail {
     this.body = new helper.Content('text/html', content);
     this.recipients = this.formatAddresses(recipients);
 
-    this.addContent(this.body);
+    this.addContent(this.body); // addContent is a helper func from helper.Mail
     this.addClickTracking();
     this.addRecipients();
   }
